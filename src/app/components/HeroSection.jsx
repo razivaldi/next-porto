@@ -60,7 +60,7 @@ export default function HeroSection() {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] relative lg:h-[400px] lg:w-[400px]">
             <Image
-              src="/images/avatar-9.png"
+              src="/images/Avatar-9.png"
               alt="Hero Image"
               width={300}
               height={300}
