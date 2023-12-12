@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <div className="container mx-auto px-12 py-4">
         <HeroSection />
-        {/* <AchivementSection /> */}
+        <AchivementSection />
         <AboutSection />
         <ProjectSection />
       </div>

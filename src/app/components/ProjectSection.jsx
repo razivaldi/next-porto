@@ -9,16 +9,16 @@ const projectsData = [
     id: 1,
     title: "React Portfolio Website",
     description: "Personal Portfolio Website",
-    image: "/images/projects/1.png",
+    image: "/images/projects/porto.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/razivaldi/next-porto",
-    previewUrl: "https://vercel.com/raziv-aldis-projects/next-porto",
+    previewUrl: "https://next-porto-zeta.vercel.app/",
   },
   {
     id: 2,
     title: "Cek Toko Sebelah",
     description: "Project E-commerse",
-    image: "/images/projects/2.png",
+    image: "/images/projects/ecom.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/razivaldi/react-ecommerce",
     previewUrl: "https://ecom.aldiverse.com/",
@@ -27,7 +27,7 @@ const projectsData = [
     id: 3,
     title: "Dashboard E-commerse",
     description: "Dashboard for Cek Toko Sebelah",
-    image: "/images/projects/3.png",
+    image: "/images/projects/dashboard.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/razivaldi/material-dashboard",
     previewUrl: "https://dashboard.aldiverse.com/dashboard/home",
@@ -36,10 +36,9 @@ const projectsData = [
     id: 4,
     title: "REST API",
     description: "API for Cek Toko Sebelah",
-    image: "/images/projects/4.png",
+    image: "/images/projects/api.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/razivaldi/mongoDB",
-    previewUrl: "/",
   },
 ];
 const ProjectSection = () => {
@@ -89,7 +88,7 @@ const ProjectSection = () => {
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            transition={{ duration: 0.3, delay: index * 0.2 }}
           >
             <ProjectCard
               key={project.id}
