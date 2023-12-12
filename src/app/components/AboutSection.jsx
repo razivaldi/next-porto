@@ -9,10 +9,11 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>React</li>
-        <li>Node.js</li>
+        <li>React js</li>
+        <li>Express js</li>
+        <li>Tailwind Css</li>
+        <li>MongoDB</li>
+        <li>MySql</li>
       </ul>
     ),
   },
@@ -21,10 +22,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>education</li>
-        <li>Express</li>
-        <li>React</li>
-        <li>Node.js</li>
+        <li className="capitalize">Electrical Engineering</li>
       </ul>
     ),
   },
@@ -33,10 +31,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>certif</li>
-        <li>Express</li>
-        <li>React</li>
-        <li>Node.js</li>
+        <li className="capitalize">bootcamp full stack koding akademi</li>
       </ul>
     ),
   },
@@ -53,16 +48,13 @@ function AboutSection() {
   };
 
   return (
-    <section className="text-white">
+    <section className="text-white scroll-mt-20" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" alt="me" width={500} height={500} />
+        <Image src="/images/about.jpg" style={{ borderRadius: "2%" }} alt="me" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-            excepturi fuga saepe provident ducimus quasi itaque. Minima, aut?
-            Commodi, harum? Reiciendis, inventore repellat in dolor quam quos
-            impedit voluptate veritatis?
+            Motivated and hardworking individual with a passion for web development seeks hands-on experience with a team of professionals. Strong understanding of web development concepts and eagerness to learn new technologies.
           </p>
           <div className="flex flex-row mt-8">
             <TabButton

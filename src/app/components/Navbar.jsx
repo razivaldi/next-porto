@@ -11,25 +11,26 @@ const navLinks = [
     path: "#about",
   },
   {
-    title: "projects",
+    title: "Projects",
     path: "#projects",
-  },
-  {
-    title: "contact",
-    path: "#contact",
   },
 ];
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const closeNav = () => {
+    setNavbarOpen(false);
+  }
+  
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 right-0 left-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex flex-wrap lg:py-4  items-center justify-between mx-auto px-4 py-4">
+    <nav className="w-full sticky top-0 z-20 mx-auto border border-[#33353F] bg-[#121212] bg-opacity-100">
+      <div className="flex flex-wrap lg:py-4 items-center justify-between mx-auto px-8 py-4">
         <Link
           href="/"
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          ALDIVERSE
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -51,14 +52,14 @@ const Navbar = () => {
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink key={index} href={link.path} title={link.title} />
+              <li key={index} onClick={() => console.log('navbar')}>
+                <NavLink href={link.path} title={link.title} />
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks}/> : null }
+      {navbarOpen ? <MenuOverlay links={navLinks} closeNav={closeNav} /> : null }
     </nav>
   );
 };

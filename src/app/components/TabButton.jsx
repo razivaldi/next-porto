@@ -12,7 +12,7 @@ function TabButton({ active, selectTab, children }) {
     : "text-[#ADB7BE]";
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+      <p className={`mr-9 font-semibold hover:text-white ${buttonClasses}`}>
         {children}
       </p>
       <motion.div
